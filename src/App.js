@@ -7,7 +7,10 @@ import { prefixer } from 'stylis'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const theme = createTheme({
-  direction: 'rtl'
+  direction: 'rtl',
+  typography: {
+    fontFamily: 'vazir, roboto'
+  }
 })
 
 const cacheRtl = createCache({
