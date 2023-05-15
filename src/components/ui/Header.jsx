@@ -6,7 +6,7 @@ const Header = () => {
     const { children } = props
 
     const trigger = useScrollTrigger({
-      disableHysteresis: true,
+      disableHysteresis: false,
       threshold: 0
     })
 

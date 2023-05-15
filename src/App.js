@@ -4,7 +4,6 @@ import { CacheProvider } from '@emotion/react'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import createCache from '@emotion/cache'
 import { prefixer } from 'stylis'
-import { Button } from '@mui/material'
 
 import Header from './components/ui/Header'
 import './App.css'
