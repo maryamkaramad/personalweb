@@ -1,6 +1,6 @@
 import { cloneElement } from 'react'
 import { AppBar, Toolbar, useScrollTrigger } from '@mui/material'
-import Logonomy from '../../assets/logonomy.jpeg.svg'
+import Logonomy from '../../assets/logonomy-removebg-preview.png'
 const Header = () => {
   function ElevationScroll (props) {
     const { children } = props
@@ -23,7 +23,7 @@ const Header = () => {
             <img
               src={Logonomy}
               alt='لوکو'
-              style={{ width: '2.5rem', borderRadius: '5rem' }}
+              style={{ width: '3rem', marginRight: 8, marginTop: 8 }}
             />
           </Toolbar>
         </AppBar>
