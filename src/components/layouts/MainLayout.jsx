@@ -23,10 +23,10 @@ const MainLayout = ({ children }) => {
             <title>وب سایت شخصی یونس قربانی</title>
           </Helmet>
           <Grid2 container sx={{ height: '100vh' }}>
-            <Grid2 xs={2} sx={{ backgroundColor: 'primary.main' }}>
+            <Grid2 xs={0} md={3} sx={{ backgroundColor: 'primary.main' }}>
               <Typography sx={{ textAlign: 'center' }}>سایدبار</Typography>
             </Grid2>
-            <Grid2 xs={10} sx={{ backgroundColor: 'secondary.main' }}>
+            <Grid2 xs={12} md={9} sx={{ backgroundColor: 'secondary.main' }}>
               <Typography sx={{ textAlign: 'center' }}>صفحه ی اصلی </Typography>
             </Grid2>
           </Grid2>
