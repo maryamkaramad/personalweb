@@ -4,17 +4,9 @@ import { CacheProvider } from '@emotion/react'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import createCache from '@emotion/cache'
 import { prefixer } from 'stylis'
-
 import Header from './components/ui/Header'
 import './App.css'
-
-//NOTE Create Custom Theme
-const theme = createTheme({
-  direction: 'rtl',
-  typography: {
-    fontFamily: 'vazir, roboto'
-  }
-})
+import { theme } from './components/ui/theme'
 
 //NOTE Create RTL Cache
 const cacheRTL = createCache({
@@ -31,6 +23,7 @@ function App () {
             <title>وب سایت شخصی من</title>
           </Helmet>
           <Header />
+          hi
           {[...new Array(200)]
             .map(
               () => `Cras mattis consectetur purus sit amet fermentum.
