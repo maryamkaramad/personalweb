@@ -7,6 +7,7 @@ import { prefixer } from 'stylis'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import { theme } from './../ui/theme'
 import { Typography } from '@mui/material'
+import Sidebar from '../ui/Sidebar'
 
 //NOTE Create RTL Cache
 const cacheRTL = createCache({
@@ -23,14 +24,12 @@ const MainLayout = ({ children }) => {
             <title>وب سایت شخصی یونس قربانی</title>
           </Helmet>
           <Grid2 container sx={{ height: '100vh' }}>
-            <Grid2 xs={0} md={3} sx={{ backgroundColor: 'primary.main' }}>
-              <Typography sx={{ textAlign: 'center' }}>سایدبار</Typography>
-            </Grid2>
+            <Sidebar />
             <Grid2 xs={12} md={9} sx={{ backgroundColor: 'secondary.main' }}>
               <Typography sx={{ textAlign: 'center' }}>صفحه ی اصلی </Typography>
+              {children}
             </Grid2>
           </Grid2>
-          {children}
         </HelmetProvider>
       </ThemeProvider>
     </CacheProvider>
