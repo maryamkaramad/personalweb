@@ -21,7 +21,7 @@ const MainLayout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <HelmetProvider>
           <Helmet>
-            <title>وب سایت شخصی یونس قربانی</title>
+            <title>وب سایت شخصی </title>
           </Helmet>
           <Grid2 container sx={{ height: '100vh' }}>
             <Sidebar />
