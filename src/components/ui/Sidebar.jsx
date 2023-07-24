@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Box, Divider, Typography } from '@mui/material'
+import { Avatar, Box, Divider, Hidden, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 const Sidebar = () => {
   return (
@@ -12,11 +12,15 @@ const Sidebar = () => {
           textAlign: 'center'
         }}
       >
-        <Avatar
-          src={require('../../assets/download.png')}
-          variant='rounded'
-          sx={{ height: 100, width: 100, margin: '0 auto' }}
-        />
+        {/* برای حذف کردن از پایین تر از md */}
+        <Hidden mdDown>
+          <Avatar
+            src={require('../../assets/download.png')}
+            variant='rounded'
+            sx={{ height: 100, width: 100, margin: '0 auto' }}
+          />
+        </Hidden>
+
         <Typography variant='h5'>مریم کارامد</Typography>
         <Typography variant='h6'>برنامه نویس فرانت</Typography>
       </Box>
