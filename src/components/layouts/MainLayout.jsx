@@ -6,8 +6,7 @@ import createCache from '@emotion/cache'
 import { prefixer } from 'stylis'
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import { theme } from './../ui/theme'
-import { Typography } from '@mui/material'
-import Sidebar from '../ui/Sidebar'
+
 
 //NOTE Create RTL Cache
 const cacheRTL = createCache({
@@ -24,11 +23,7 @@ const MainLayout = ({ children }) => {
             <title>وب سایت شخصی </title>
           </Helmet>
           <Grid2 container sx={{ height: '100vh' }}>
-            <Sidebar />
-            <Grid2 xs={12} md={9} sx={{ backgroundColor: 'secondary.main' }}>
-              <Typography sx={{ textAlign: 'center' }}>صفحه ی اصلی </Typography>
-              {children}
-            </Grid2>
+            {children}
           </Grid2>
         </HelmetProvider>
       </ThemeProvider>
